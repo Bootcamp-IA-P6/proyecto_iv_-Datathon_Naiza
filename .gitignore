@@ -1,0 +1,18 @@
+# Entorno virtual (La cocina que creamos antes)
+.venv/
+venv/
+ENV/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datos (Opcional: si tu CSV es muy grande, mejor no subirlo)
+# cos.csv
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Datos pesados - No subir a GitHub
+all-states-history.csv
