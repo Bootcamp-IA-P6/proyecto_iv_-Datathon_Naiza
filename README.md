@@ -7,14 +7,14 @@
 - 🚀 Funcionalidades
 Limpieza de Datos: Eliminación automática de registros con valores nulos en columnas críticas.
 
-Procesamiento Temporal: Conversión de fechas de calendario a formato numérico (días transcurridos) para facilitar el modelado matemático.
+- Procesamiento Temporal: Conversión de fechas de calendario a formato numérico (días transcurridos) para facilitar el modelado matemático.
 
-Modelado Predictivo: Implementación de una Regresión Lineal para identificar la tendencia de crecimiento.
+### Modelado Predictivo: Implementación de una Regresión Lineal para identificar la tendencia de crecimiento.
 
-Visualización: Generación de gráficos comparativos entre los datos reales y la predicción del modelo.
+- Visualización: Generación de gráficos comparativos entre los datos reales y la predicción del modelo.
 
-🛠️ Tecnologías Utilizadas
-Python 3.x
+- 🛠️ Tecnologías Utilizadas
+Python 3.12, numpy, pandas, scikit learn, matplotlit
 
 Pandas: Manipulación y limpieza de estructuras de datos.
 
@@ -25,16 +25,31 @@ Scikit-Learn: Implementación del modelo de Regresión Lineal.
 Matplotlib: Visualización de datos y gráficos.
 
 📋 Estructura del Código
-Filtrado: Se extraen únicamente los datos correspondientes al estado de Alabama (AL).
+Filtrado: Se extraen únicamente los datos correspondientes al estado de Alabama (AL) para la regresión líneal, utilizando la tecnología de scikit learn.
 
-Normalización: Se establece una fecha base (Día 0) para medir el tiempo de forma relativa.
+- Es importante que ubiques un dataset para tu tratado de datos ¿Cómo lo vas hacer? Descargar el archivo en tu proyecto 
+## Recomendación 
+- Aplicar las siguientes extensiones:
+- jupyter, python extension pack, coolab
+  
+### Step 1 ) Tu entorno virtual tiene que estar activado 
+- python -m venv .ven --> para instalar el entorno 
+- source .venv/Script/activate --> para activar entorno en Window 
+  ### Step 2 ) Crea tu archivo gitignore
+  - En el archivo coloca tu entorno virtual, y tus librerias que puedan afectar el rendimiento de tu repo 
+  - for example __pycache__/
+*.py[cod]
+*$py.class
 
-Entrenamiento: El modelo ajusta una línea recta que minimiza la distancia entre los datos reales de muertes y la predicción.
+  ### step 3 ) En la carpeta local coloca el archivo csv 
+  ### step 4 ) creamos un archivo con la extencion ipynnb
 
-Gráfica: Se visualiza mediante un scatter plot (puntos azules) y una línea de tendencia (roja).
+  ### En el notebook (analisis.ypynb) Visualizaras el formato Markdow con la explicación del código 
 
 ⚙️ Requisitos
 Para ejecutar este proyecto, necesitas instalar las siguientes dependencias:
+
+pip isnstall
 
 Bash
 pip install pandas numpy matplotlib scikit-learn jupyter
